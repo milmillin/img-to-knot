@@ -4,7 +4,7 @@ This repository contains a web interface to create a [knitout](https://textiles-
 
 ## The "knot" stitch
 
-![Knot stitch](/knot-stitch.svg)
+![Knot stitch](/knot-stitch-01.png)
 
 ## Usage
 
