@@ -2,6 +2,10 @@
 
 This repository contains a web interface to create a [knitout](https://textiles-lab.github.io/knitout/knitout.html) file with "knot" stiches from an image.
 
+## The "knot" stitch
+
+![Knot stitch](/knot-stitch.svg)
+
 ## Usage
 
 Open the prebuilt `dist/index.html`, and select an image file. The knot will be created on the white pixels by default.
