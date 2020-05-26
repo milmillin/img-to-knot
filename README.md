@@ -8,12 +8,12 @@ This repository contains a web interface to create a [knitout](https://textiles-
 
 ## Usage
 
-Open the prebuilt `dist/index.html`, and select an image file. The knot will be created on the white pixels by default.
+Open the prebuilt `dist/index.html`, and select an image file.
 
 ### Parameters
-- Desired width: the number of stiches in each row.
+- Desired width: the number of stitches in each row.
 - Threshold: the threshold to create black-and-white image.
-- Number of knots: the number of times a yarn goes around the stich.
+- Number of knots: the number of times a yarn goes around the stitch.
 - Knot on black: whether to create a knot on a black pixel
 
 ![Screenshot](/screenshot.png)
@@ -28,7 +28,7 @@ npx webpack
 
 ### `src/knot.js`
 
-Contains a function that creates a rectangular piece with knot stitches at specified positions and returns a `knitout` string.
+Exports a function that creates a rectangular piece with knot stitches at specified positions and returns a `knitout` string.
 
 - `knotData`: an object with keys `width`, `height`, and `data`. `knotData.data` is a 2-dimensional array of boolean indicating whether to create a knot stitch on that position.
 - `invert`: a boolean; if set to `True`, create a knot on stitch on position where `knotData.data` is `False`.
@@ -38,8 +38,13 @@ Modify this file if you want to change the header or the yarn carrier of the gen
 
 ### `src/knitout.js`
 
-A javascript frontend for `knitout` file. Modified version of [https://github.com/textiles-lab/knitout-frontend-js](https://github.com/textiles-lab/knitout-frontend-js).
+A javascript frontend for `knitout` file. Modified from [https://github.com/textiles-lab/knitout-frontend-js](https://github.com/textiles-lab/knitout-frontend-js).
 
 ### `src/index.js`
 
 An interface between the DOM elements and `src/knot.js`.
+
+## Additional Resources
+- [knitout file format](https://textiles-lab.github.io/knitout/knitout.html)
+- [knitout-frontend-js](https://github.com/textiles-lab/knitout-frontend-js)
+
